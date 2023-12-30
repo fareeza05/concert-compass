@@ -9,8 +9,12 @@ function App() {
 
   return (
     <>
-     <h2>Hey There! Here are today's Top Picks </h2>
-     <Navbar/>
+    <Navbar/>
+    <div className='main-container'>
+      <h2>Hey there! Here's whats trending today </h2>
+     <Card/>
+     <List/>
+    </div>
     </>
   )
 }

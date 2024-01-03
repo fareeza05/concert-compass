@@ -4,12 +4,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow-y: scroll;
 
 }
 
 body{
   background-color: black;
   color:white;
+  overflow-y: scroll;
 }
 
 .navbar {
@@ -41,13 +43,14 @@ body{
 
 li {
   margin-bottom: 20px;
+  list-style:none;
 }
 
 .card-container {
   display:flex;
   padding:0px;
   margin-bottom: 10px;
-  
+  justify-content: center;
   
   
 }
@@ -65,11 +68,15 @@ li {
 
 
 .list-container {
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
+  flex-direction: column;
   padding:10px;
-  border:1px solid black;
+  border:1px solid white;
   border-radius: 8px;
   background-color: rgb(35, 81, 27, 0.5);
+  overflow-y: scroll;
 }
 
 .main-container {
@@ -77,9 +84,29 @@ li {
   display: flex;
   flex-direction: column;
   border:1px solid black;
-  height: 70%;
+  height: 90%;
+  width: 70%;
   position: fixed;
   top:50px;
-  left:200px;
+  left:180px;
   padding:20px;
+  overflow-y: scroll;
+  
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  padding:10px;
+  
+}
+
+.info2 {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }

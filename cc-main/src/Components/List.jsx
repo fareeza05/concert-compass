@@ -38,7 +38,6 @@ const List = () => {
             const list = await fetch(`https://api.seatgeek.com/2/events?taxonomies.name=concert&sort=score.desc&datetime_utc.gte=${currentDate}&client_id=${API_KEY}&client_secret=${API_PASS}`);
             const listjson = await list.json();
             setConcerts(listjson);
-            console.log(concerts);
 
         }
 

@@ -16,8 +16,8 @@ function App() {
     <Navbar/>
     <div className='main-container'>
       <h2>Hey there! Here's whats trending today </h2>
-     <Card/>
-     <List/>
+      <Card/>
+      <List/>
     </div>
     </>
   )

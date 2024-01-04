@@ -45,6 +45,23 @@ const List = () => {
         fetchConcerts().catch(console.error)
     }, []);
 
+  
+    const dateTime = (datetimestring) => {
+            const date = new Date(datetimestring);
+            const formattedDate = date.toLocaleDateString('default', {
+                month:'long',
+                day:'numeric',
+                year:'numeric'
+            });
+
+            const formattedTime = date.toLocaleTimeString('en-US', {
+                hour:'numeric',
+                minute:'2-digit'
+            });
+
+            return `${formattedDate} at ${formattedTime}`
+    }
+
 
 
     return(
@@ -61,13 +78,13 @@ const List = () => {
                             <h2>{event.title}</h2>
                             <div className="info">
                                 <div>
-                                <img height='350px' width='350px' src='' />
+                                <img height='200px' width='200px' src={event.performers[0].image} />
                                 </div>
                                 <div className="info2">
-                                <p>Date and Time </p>
+                                <p>{dateTime(event.datetime_local)}</p>
                                 <p>{event.venue.name}</p>
                                 <p>{event.venue.address}, {event.venue.extended_address}</p>
-                                <button>Get Tickets</button>
+                                <a href={event.url}>Get Tickets</a>
                                 </div>
                                 
                             </div>

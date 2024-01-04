@@ -56,13 +56,13 @@ li {
 
 .card {
   padding:20px;
-  border: solid black 1px;
+  border: solid green 1px;
   margin: 10px;
   font-size:12px;
   border-radius: 8px;
   background-color: rgb(35, 81, 27, 0.5);
-  margin-left:20px;
-  margin-right:20px;
+  margin-left:30px;
+  margin-right:30px;
 }
 
 
@@ -112,3 +112,4 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+

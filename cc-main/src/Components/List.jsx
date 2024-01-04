@@ -25,8 +25,6 @@ const List = () => {
         return () => clearInterval(intervalId);
     }, []);
 
-
-    console.log(currentDate);
     
 
     const [concerts, setConcerts] = useState(null);

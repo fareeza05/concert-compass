@@ -15,7 +15,7 @@ function App() {
     <>
     <Navbar/>
     <div className='main-container'>
-      <h2>Hey there! Here's whats trending today </h2>
+      <h2 className='title'>Hey there! Here's whats trending today </h2>
       <Card/>
       <List/>
     </div>
